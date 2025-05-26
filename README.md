@@ -83,7 +83,9 @@ Urban traffic signals often operate on static timers, causing unnecessary delays
 
 Here’s our working prototype:
 
-<img src="./db3acef7-7098-4f54-84b9-f44980e6e3a3.jpg" alt="Smart Traffic System Setup" width="600"/>
+<img src="
+![WhatsApp Image 2025-05-26 at 13 36 34_43e40904](https://github.com/user-attachments/assets/faf7cec3-e508-4b92-9666-835d252af363)
+" alt="Smart Traffic System Setup" width="600"/>
 
 - ESP32-CAM mounted above the test track captures video
 - ESP32 drives the signal logic
