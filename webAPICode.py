@@ -5,6 +5,7 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 
+load_dotenv(dotenv_path='key.env')
 def initialize_firebase():
     """Initialize Firebase connection info."""
     # Firebase configuration - same as in your HTML file
