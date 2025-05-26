@@ -12,7 +12,6 @@ import base64
 # ESP32-CAM Video Stream URL
 ESP32_URL = "http://172.20.10.3:81/stream?drop=0"
 
-load_dotenv(dotenv_path='key.env')
 # Directory to save images
 SAVE_DIR = "captured_images"
 os.makedirs(SAVE_DIR, exist_ok=True)
