@@ -18,12 +18,12 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 
 # Your Firebase Configuration
 FIREBASE_CONFIG = {
-    "apiKey": "AIzaSyAPgYJabQqcaKKCn6rob3AZd54s4hAnaAs",
-    "authDomain": "sareesite-4aef4.firebaseapp.com",
-    "projectId": "sareesite-4aef4",
-    "storageBucket": "sareesite-4aef4.firebasestorage.app",
-    "messagingSenderId": "504565105645",
-    "appId": "1:504565105645:web:466ed0fc5267dc6550dde4",
+    "apiKey": os.getenv("FIREBASE_API_KEY"),
+    "authDomain": os.getenv("FIREBASE_AUTH_DOMAIN"),
+    "projectId": os.getenv("FIREBASE_PROJECT_ID"),
+    "storageBucket": os.getenv("FIREBASE_STORAGE_BUCKET"),
+    "messagingSenderId": os.getenv("FIREBASE_MESSAGING_SENDER_ID"),
+    "appId": os.getenv("FIREBASE_APP_ID")
 }
 # Load YOLOv8 model
 model = YOLO('yolov10m.pt')

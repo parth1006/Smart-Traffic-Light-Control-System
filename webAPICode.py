@@ -3,13 +3,14 @@ import time
 import base64
 import os
 from datetime import datetime
+from dotenv import load_dotenv
 
 def initialize_firebase():
     """Initialize Firebase connection info."""
     # Firebase configuration - same as in your HTML file
     firebase_config = {
-        "apiKey": "AIzaSyAPgYJabQqcaKKCn6rob3AZd54s4hAnaAs",
-        "projectId": "sareesite-4aef4"
+        "apiKey": os.getenv("FIREBASE_API_KEY"),
+        "projectId": os.getenv("FIREBASE_PROJECT_ID")
     }
     
     print("Firebase configuration loaded.")
